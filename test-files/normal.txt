@@ -1,0 +1,13 @@
+// 2 transactions
+Log normal.log
+BeginTx 1 W
+Read    1 4
+Read    1 5
+Read    1 6
+BeginTx 2 W
+Read    2 1
+Read	2 2
+Read	2 3
+Read	2 4
+Commit  1
+commit 2

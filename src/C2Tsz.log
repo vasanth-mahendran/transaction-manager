@@ -1,0 +1,71 @@
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	R 	BeginTx
+T2	W 	BeginTx
+T1	      	ReadTx		3:-1:277		ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277		ReadLock	Granted		 P
+T2	      	ReadTx		4:-1:235		ReadLock	Granted		 P
+T3	R 	BeginTx
+T1	      	ReadTx		21:1191242047:277		ReadLock	Granted		 P
+T1	      	ReadTx		22:1201731903:277		ReadLock	Granted		 P
+T1	      	ReadTx		23:1212221759:277		ReadLock	Granted		 P
+T1	      	ReadTx		24:1222711615:277		ReadLock	Granted		 P
+T1	      	ReadTx		25:1233213759:277		ReadLock	Granted		 P
+T1	      	ReadTx		26:1243703615:277		ReadLock	Granted		 P
+T1	      	ReadTx		27:1254197567:277		ReadLock	Granted		 P
+T1	      	ReadTx		28:1264687423:277		ReadLock	Granted		 P
+T1	      	CommitTx								
+
+T2	      	ReadTx		3:-2:235		ReadLock	Granted		 P
+T3	      	ReadTx		3:-3:456		ReadLock	Granted		 P
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	R 	BeginTx
+T2	W 	BeginTx
+T1	      	ReadTx		3:-1:277		ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277		ReadLock	Granted		 P
+T3	R 	BeginTx
+T2	      	ReadTx		4:-1:235		ReadLock	Granted		 P
+T1	      	ReadTx		21:-42669761:277		ReadLock	Granted		 P
+T1	      	ReadTx		22:-32179905:277		ReadLock	Granted		 P
+T1	      	ReadTx		23:-21690049:277		ReadLock	Granted		 P
+T1	      	ReadTx		24:-11200193:277		ReadLock	Granted		 P
+T1	      	ReadTx		25:-710337:277		ReadLock	Granted		 P
+T1	      	ReadTx		26:9779519:277		ReadLock	Granted		 P
+T1	      	ReadTx		27:20269375:277		ReadLock	Granted		 P
+T1	      	ReadTx		28:30759231:277		ReadLock	Granted		 P
+T1	      	CommitTx								
+
+T2	      	ReadTx		3:-2:235		ReadLock	Granted		 P
+T3	      	ReadTx		3:-3:456		ReadLock	Granted		 P
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	R 	BeginTx
+T2	W 	BeginTx
+T1	      	ReadTx		1:-1:277		ReadLock	Granted		 P
+T2	      	ReadTx		4:-1:235		ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277		ReadLock	Granted		 P
+T3	R 	BeginTx
+T2	      	ReadTx		5:-1:235		ReadLock	Granted		 P
+T1	      	ReadTx		1:-2:277		ReadLock	Granted		 P
+T1	      	ReadTx		2:-2:277		ReadLock	Granted		 P
+T1	      	ReadTx		1:-3:277		ReadLock	Granted		 P
+T1	      	ReadTx		2:-3:277		ReadLock	Granted		 P
+T1	      	ReadTx		1:-4:277		ReadLock	Granted		 P
+T1	      	ReadTx		2:-4:277		ReadLock	Granted		 P
+T1	      	ReadTx		1:-5:277		ReadLock	Granted		 P
+T1	      	ReadTx		2:-5:277		ReadLock	Granted		 P
+T1	      	CommitTx								
+
+T2	      	ReadTx		2:-6:235		ReadLock	Granted		 P
+T3	      	ReadTx		2:-7:456		ReadLock	Granted		 P
+T2	      	ReadTx		6:-1:235		ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235		ReadLock	Granted		 P
+T3	      	ReadTx		9:-1:456		ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235		ReadLock	Granted		 P
+T2	      	CommitTx								
+
+T3	      	ReadTx		4:-2:456		ReadLock	Granted		 P
+T3	      	ReadTx		1:-6:456		ReadLock	Granted		 P
+T3	      	CommitTx								
+

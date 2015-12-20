@@ -1,0 +1,29 @@
+// serializable history
+// conflicts but total order
+log testreadonly.log
+BeginTx 1 R
+Read    1 1
+Read    1 2
+BeginTx 2 W
+Read    2 4
+Read    2 5
+Read    2 2
+Read    2 6
+Read    2 7
+Read    2 8
+BeginTx 3 R
+Read    3 1
+Read    3 2
+Read    3 4
+Read    3 1
+Read    1 1
+Read    1 2
+Read    1 1
+Read    1 2
+Read    1 1
+Read    1 2
+Read    1 1
+Read    1 2
+Commit  1
+commit 2
+commit 3
